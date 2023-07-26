@@ -10,23 +10,15 @@ function romanToInteger(romanNumeral) {
   };
 
   let result = 0;
-  let previousValue = 0;
-
-  for (let i = romanNumeral.length - 1; i >= 0; i--) {
-    const currentChar = romanNumeral[i];
-    const currentValue = romanNumeralsMap[currentChar];
-
-    if (currentValue < previousValue) {
-      result -= currentValue;
-    } else {
-      result += currentValue;
+  romanNumeral.split('').forEach((number,i) => {
+    if(romanNumeralsMap[number]<romanNumeralsMap[romanNumeral[i+1]]){
+      result -= romanNumeralsMap[number];
+    } else{
+      result += romanNumeralsMap[number];
     }
-
-    previousValue = currentValue;
-  }
-
+  });
   return result;
 }
-let romanNumber = "V";
+let romanNumber = "XI";
 let integer = romanToInteger(romanNumber)
 console.log(integer);
