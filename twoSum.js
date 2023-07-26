@@ -18,6 +18,6 @@ function findTwoSum(arr, target) {
 }
 
 const numbers = [1, 3, 6, 8, 11, 15];
-const targetValue = 20;
+const targetValue = 14;
 const output = findTwoSum(numbers, targetValue);
 console.log(output); 

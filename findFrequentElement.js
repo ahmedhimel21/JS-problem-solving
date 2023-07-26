@@ -14,6 +14,6 @@ function findMostFrequentElement(numbers) {
 }
 
 
-const numbers = [1, 2, 3,3,3,3,3,3,2, 4, 2, 5, 2, 6];
+const numbers = [1, 2, 3,2, 4, 2, 5, 2, 6];
 const output = findMostFrequentElement(numbers);
 console.log(output);

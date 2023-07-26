@@ -19,6 +19,6 @@ function romanToInteger(romanNumeral) {
   });
   return result;
 }
-let romanNumber = "XI";
+let romanNumber = "IX";
 let integer = romanToInteger(romanNumber)
 console.log(integer);
